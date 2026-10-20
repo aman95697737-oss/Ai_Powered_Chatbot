@@ -1,0 +1,366 @@
+[
+  {
+    "id": 1,
+    "category": "Admission",
+    "question": "What documents are required for university admission?",
+    "keywords": ["admission", "documents", "certificate", "eligibility", "enrollment", "apply"],
+    "answer": "Required documents for admission typically include: 10th and 12th official mark sheets, graduation degree/transcripts (for postgraduate programs), Transfer Certificate (TC) or Migration Certificate, valid government ID (Passport, Aadhaar, or National ID), entrance exam scorecard, passport-sized photographs, and category/caste certificate (if applicable). Original copies must be presented for physical verification during counseling."
+  },
+  {
+    "id": 2,
+    "category": "Admission",
+    "question": "Can I apply for lateral entry into the second year of engineering or degree programs?",
+    "keywords": ["lateral entry", "second year", "diploma", "transfer", "admission"],
+    "answer": "Yes, candidates holding a recognized 3-year Diploma in Engineering/Technology or a B.Sc. degree with Mathematics with a minimum of 50% marks (45% for reserved categories) are eligible for direct lateral entry into the 3rd semester (2nd year) of relevant B.Tech/Undergraduate programs, subject to seat availability."
+  },
+  {
+    "id": 3,
+    "category": "Admission",
+    "question": "What is the application fee and is it refundable?",
+    "keywords": ["application fee", "refund", "registration fee", "admission cost"],
+    "answer": "The application fee is non-refundable. For domestic undergraduate programs it is $50 (or ₹1,200), and for postgraduate programs it is $65 (or ₹1,500). If you withdraw your admission before the orientation cutoff date, tuition fees are refunded as per standard UGC/University refund regulations."
+  },
+  {
+    "id": 4,
+    "category": "Registration",
+    "question": "How do I register for semester courses and electives?",
+    "keywords": ["registration", "course registration", "electives", "portal", "semester enrollment"],
+    "answer": "Course registration is completed online via the University Student Portal (ERP). Log into your student account, navigate to 'Academics' > 'Course Registration', select your core and departmental/open elective subjects according to your curriculum credit limits, and click 'Submit'. Ensure your academic advisor approves your course selection before the published deadline."
+  },
+  {
+    "id": 5,
+    "category": "Registration",
+    "question": "What is the deadline for add/drop of elective courses?",
+    "keywords": ["add drop", "deadline", "course change", "elective switch"],
+    "answer": "Students can add or drop elective courses within the first 10 working days of the semester commencement. After this add/drop window closes, no changes in subject choices or elective tracks will be permitted under any circumstances."
+  },
+  {
+    "id": 6,
+    "category": "Fees",
+    "question": "What are the available modes of tuition fee payment?",
+    "keywords": ["fees", "tuition", "payment mode", "net banking", "credit card", "challan"],
+    "answer": "Tuition fees can be paid online via the Student ERP Portal using Credit/Debit Cards, Net Banking, UPI, or NEFT/RTGS transfer. Demand Drafts (DD) drawn in favor of the University Registrar are also accepted at the University Accounts Desk in the Administrative Block."
+  },
+  {
+    "id": 7,
+    "category": "Fees",
+    "question": "Can I pay my semester fees in installments?",
+    "keywords": ["fee installment", "installments", "partial payment", "split fees", "financial hardship"],
+    "answer": "Yes, students experiencing financial constraints may request an installment payment plan. An application endorsed by the student's guardian and Head of Department (HOD) must be submitted to the Dean of Student Affairs at least two weeks before the fee due date, allowing payments in two equal installments."
+  },
+  {
+    "id": 8,
+    "category": "Fees",
+    "question": "What is the late fee penalty if I miss the payment due date?",
+    "keywords": ["late fee", "penalty", "due date", "fine"],
+    "answer": "A late fine of $15 (₹500) per week is applied after the published due date. If fees remain unpaid for more than 30 days after the final date, course portal access and exam hall ticket generation may be temporarily withheld until dues are cleared."
+  },
+  {
+    "id": 9,
+    "category": "Examination",
+    "question": "When are semester end examinations conducted and where is the schedule?",
+    "keywords": ["examination", "exam dates", "end semester", "exam timetable", "schedule"],
+    "answer": "Odd semester examinations are typically held between November and December, while even semester examinations occur in April and May. The comprehensive examination schedule is officially released by the Controller of Examinations (COE) on the university website at least 3 weeks prior to exam commencement."
+  },
+  {
+    "id": 10,
+    "category": "Examination",
+    "question": "How and when can I download my exam hall ticket (admit card)?",
+    "keywords": ["hall ticket", "admit card", "exam pass", "download hall ticket"],
+    "answer": "Hall tickets are available for download on the Student ERP Portal 7 days before the start of examinations under 'Examinations' > 'Admit Card'. You must satisfy minimum attendance requirements (75%) and have zero fee arrears to download the admit card. A printed copy with a valid Student ID is mandatory for exam entry."
+  },
+  {
+    "id": 11,
+    "category": "Examination",
+    "question": "What is the university policy regarding unfair means (cheating) during exams?",
+    "keywords": ["unfair means", "malpractice", "cheating", "disciplinary action", "exam rules"],
+    "answer": "Possession of mobile phones, smartwatches, cheat notes, or engaging in unauthorized communication inside the exam hall constitutes severe malpractice. Cases are immediately escalated to the Examination Disciplinary Committee, potentially resulting in cancellation of the paper, debarment for the semester, or academic suspension."
+  },
+  {
+    "id": 12,
+    "category": "Results",
+    "question": "How is the SGPA and CGPA calculated?",
+    "keywords": ["cgpa", "sgpa", "gpa calculation", "grade points", "grading system"],
+    "answer": "SGPA (Semester Grade Point Average) is calculated as Σ(Course Credits × Grade Points Earned) / Σ(Total Course Credits for the semester). CGPA (Cumulative Grade Point Average) is the weighted average of grade points obtained across all semesters taken to date. Letter grades typically scale from O (Outstanding = 10) down to F (Fail = 0)."
+  },
+  {
+    "id": 13,
+    "category": "Results",
+    "question": "What is the procedure for answer script revaluation or rechecking?",
+    "keywords": ["revaluation", "rechecking", "grade review", "scrutiny", "paper retotaling"],
+    "answer": "Students dissatisfied with their semester grades can apply for answer script photocopy or revaluation within 15 days of result declaration through the ERP portal. A nominal processing fee per subject is applicable. A neutral evaluator rechecks the script, and the revised marks are final."
+  },
+  {
+    "id": 14,
+    "category": "Results",
+    "question": "How do I clear backlogs or reappear for a failed subject?",
+    "keywords": ["backlog", "arrears", "supplementary exam", "reappear", "failed subject"],
+    "answer": "Supplementary/backlog examinations are conducted alongside regular semester exams or during a special summer term. Students must register for backlog papers during the exam registration window by paying the supplementary exam fee per subject."
+  },
+  {
+    "id": 15,
+    "category": "Attendance",
+    "question": "What is the minimum attendance requirement to be eligible for exams?",
+    "keywords": ["attendance", "minimum attendance", "attendance percentage", "75 percent", "detention"],
+    "answer": "Students must maintain a minimum of 75% aggregate attendance in each registered theory and practical course to be eligible to sit for the semester end examinations. Students with attendance between 65% and 74% due to medical emergencies or official university representation may apply for condonation with approved documentation."
+  },
+  {
+    "id": 16,
+    "category": "Attendance",
+    "question": "What is the process to apply for medical leave or attendance exemption?",
+    "keywords": ["medical leave", "medical certificate", "leave application", "attendance exemption"],
+    "answer": "In case of illness or hospitalization, submit a formal leave application along with a registered medical practitioner's certificate and hospital discharge summary to your Department Mentor/HOD within 5 working days of returning to campus. Once verified, eligible attendance credit will be updated on the portal."
+  },
+  {
+    "id": 17,
+    "category": "Attendance",
+    "question": "What happens if my attendance falls below the detention limit?",
+    "keywords": ["detained", "attendance shortage", "debarred", "below 65"],
+    "answer": "Students with less than 65% attendance who lack valid approved medical condonation will be detained in that subject. Detained students are not permitted to appear for the end-semester examination and must re-register for the course whenever it is offered in subsequent semesters."
+  },
+  {
+    "id": 18,
+    "category": "Timetable",
+    "question": "Where can I view my daily class timetable and lecture schedules?",
+    "keywords": ["timetable", "schedule", "class timings", "routine", "lectures"],
+    "answer": "Class timetables are published before the start of each semester on the student ERP portal under 'Academics' > 'Class Timetable'. Batch-wise schedules and classroom/lab allocations are also displayed on respective departmental notice boards and synced with the university mobile app."
+  },
+  {
+    "id": 19,
+    "category": "Timetable",
+    "question": "Can I request a change in class section or lab batch?",
+    "keywords": ["section change", "batch change", "timetable conflict"],
+    "answer": "Section or batch change requests are considered only during the first week of classes, provided there is a genuine timetable clash or documented medical reason, and subject to seat balance between sections. Applications must be countersigned by the Department Head."
+  },
+  {
+    "id": 20,
+    "category": "Courses",
+    "question": "What is the difference between core, elective, and audit courses?",
+    "keywords": ["core course", "elective", "audit course", "credits", "curriculum"],
+    "answer": "Core courses are mandatory subjects foundational to your degree. Electives are specialized subjects chosen by students to pursue sub-disciplines or interdisciplinary skills. Audit courses allow you to attend classes for knowledge without earning academic credits or having grades count toward your CGPA."
+  },
+  {
+    "id": 21,
+    "category": "Courses",
+    "question": "How do I access the syllabus and recommended textbooks for my degree?",
+    "keywords": ["syllabus", "curriculum", "textbooks", "course outline", "reference books"],
+    "answer": "The official curriculum structure and detailed syllabus for every program and semester can be downloaded as a PDF from the 'Academics' > 'Syllabus' tab on the university website, or directly from the respective academic department's web page."
+  },
+  {
+    "id": 22,
+    "category": "Assignments",
+    "question": "Where do I submit coursework assignments and lab reports?",
+    "keywords": ["assignments", "submission", "lms", "moodle", "lab reports", "coursework"],
+    "answer": "All coursework assignments and lab submissions must be uploaded via the University Learning Management System (LMS / Moodle / Canvas). Ensure submissions adhere to the requested format (typically PDF or ZIP) and are uploaded prior to the timestamped deadline."
+  },
+  {
+    "id": 23,
+    "category": "Assignments",
+    "question": "What is the university's policy on plagiarism and AI-generated content in assignments?",
+    "keywords": ["plagiarism", "turnitin", "ai content", "academic integrity", "assignment penalty"],
+    "answer": "All submitted work is screened through automated plagiarism detection tools (such as Turnitin). Similarity scores exceeding 15% (excluding citations and references) or unauthorized AI-generated work without proper attribution may result in zero marks for the submission and referral to the Academic Integrity Board."
+  },
+  {
+    "id": 24,
+    "category": "Library",
+    "question": "What are the Central Library operating hours and holiday schedules?",
+    "keywords": ["library hours", "timings", "central library", "open hours", "weekends"],
+    "answer": "The Central Library is open Monday through Saturday from 8:00 AM to 10:00 PM, and on Sundays from 10:00 AM to 5:00 PM. During semester examination periods, reading halls remain open 24/7 with active security and Wi-Fi access."
+  },
+  {
+    "id": 25,
+    "category": "Library",
+    "question": "How many books can a student borrow and what is the loan period?",
+    "keywords": ["borrow books", "book issue", "loan period", "library card", "book limit"],
+    "answer": "Undergraduate students can borrow up to 4 books for 14 days, while Postgraduate and Research scholars may borrow up to 6 books for 30 days. Books can be renewed online once through the OPAC library catalog system if there are no pending reservations."
+  },
+  {
+    "id": 26,
+    "category": "Library",
+    "question": "How do I access online journals, IEEE Xplore, and digital library resources from home?",
+    "keywords": ["digital library", "ieee", "springer", "journals", "remote access", "vpn"],
+    "answer": "Remote access to digital libraries (IEEE Xplore, ScienceDirect, Springer, JSTOR) is provided via the University EZproxy or institutional VPN. Log in using your university student email credentials at the Digital Library portal (library.university.edu/digital)."
+  },
+  {
+    "id": 27,
+    "category": "Hostel",
+    "question": "How do I apply for on-campus hostel accommodation?",
+    "keywords": ["hostel", "accommodation", "dormitory", "hostel room", "hostel application"],
+    "answer": "Hostel room allocation is processed online alongside the academic registration portal. Submit the hostel accommodation form, select your room preference (Single, Double, or AC/Non-AC), and pay the requisite caution deposit and mess charges. Allotment is granted based on distance from home and availability."
+  },
+  {
+    "id": 28,
+    "category": "Hostel",
+    "question": "What are the hostel curfew timings and night out-pass procedures?",
+    "keywords": ["hostel curfew", "in-time", "out pass", "night leave", "warden permission"],
+    "answer": "Hostel residents must return to their respective hostels by 9:30 PM on weekdays and 10:30 PM on weekends. For overnight stays outside campus, students must submit an electronic Out-Pass request on the Hostel App, with SMS/email authorization from their registered parent or guardian."
+  },
+  {
+    "id": 29,
+    "category": "Hostel",
+    "question": "What facilities are provided in the university residence halls?",
+    "keywords": ["hostel facilities", "mess", "laundry", "dorm amenities", "hot water"],
+    "answer": "Residence halls feature fully furnished rooms (bed, study table, wardrobe), 24/7 high-speed Wi-Fi, biometric security, RO drinking water, hot water geysers, laundromat facilities, indoor recreation rooms (table tennis, chess), television lounges, and nutritious meal catering (Veg and Non-Veg options)."
+  },
+  {
+    "id": 30,
+    "category": "Scholarships",
+    "question": "What merit scholarships and financial aid programs are available?",
+    "keywords": ["scholarships", "financial aid", "merit scholarship", "tuition waiver", "fee concession"],
+    "answer": "The university provides several scholarship categories: Merit Scholarships (up to 100% tuition waiver for top 5% semester ranks), Sports Scholarships for state and national medalists, Need-Based Financial Grants for economically backward students, and assistance for National Scholarship Portal (NSP) schemes."
+  },
+  {
+    "id": 31,
+    "category": "Scholarships",
+    "question": "When is the scholarship application window open and how do I apply?",
+    "keywords": ["scholarship deadline", "apply scholarship", "documents scholarship"],
+    "answer": "Scholarship applications open annually during the first month of the academic year (August/September). Submit your income certificate, previous year marksheets, bank account details, and scholarship application form to the Student Welfare Scholarship Cell."
+  },
+  {
+    "id": 32,
+    "category": "Placements",
+    "question": "What are the eligibility criteria to register for campus placements?",
+    "keywords": ["placements", "campus placement", "eligibility", "job interview", "training and placement"],
+    "answer": "Students eligible for campus placement drives must have a minimum CGPA of 6.0 or 6.5 (depending on specific corporate criteria), with no active standing backlogs at the start of the 7th semester (or final year). A minimum of 75% attendance in Career Development & Soft Skill training sessions is mandatory."
+  },
+  {
+    "id": 33,
+    "category": "Placements",
+    "question": "What services does the Training and Placement Cell (T&P) offer?",
+    "keywords": ["placement cell", "resume building", "mock interviews", "aptitude training", "career guidance"],
+    "answer": "The T&P Cell organizes technical aptitude training, coding bootcamps, group discussion practice, 1-on-1 resume reviews, industry guest masterclasses, and on-campus recruitment drives featuring leading multinational tech and core engineering firms."
+  },
+  {
+    "id": 34,
+    "category": "Internships",
+    "question": "Is an internship mandatory for graduation and how many credits does it carry?",
+    "keywords": ["internship", "summer internship", "mandatory internship", "credits", "industrial training"],
+    "answer": "Yes, completing a 4 to 8 week summer or industry internship is a mandatory graduation requirement (typically carrying 2 to 4 academic credits). Students must submit an internship completion certificate and an evaluation report along with presenting a viva to their department panel."
+  },
+  {
+    "id": 35,
+    "category": "Internships",
+    "question": "How do I get a No Objection Certificate (NOC) for an off-campus internship?",
+    "keywords": ["noc", "no objection certificate", "internship letter", "internship permission"],
+    "answer": "To obtain an NOC for an off-campus internship, submit your company offer letter detailing role description and duration to your Department Faculty Placement Coordinator. After review and HOD sign-off, the official NOC is stamped and issued within 3 working days."
+  },
+  {
+    "id": 36,
+    "category": "Student ID",
+    "question": "What should I do if I lose my Student ID card?",
+    "keywords": ["student id", "lost id", "id card replacement", "smart card"],
+    "answer": "If you lose your Student ID card: 1) File a loss report at the Campus Security Office. 2) Pay the replacement smart card fee ($10 or ₹300) at the Accounts Desk. 3) Submit the receipt along with an ID reissue form to the Central IT / Smart Card Desk. A new ID is generated within 2 working days."
+  },
+  {
+    "id": 37,
+    "category": "Student ID",
+    "question": "What services and campus facilities are integrated into the Student Smart Card?",
+    "keywords": ["smart card", "rfid", "campus access", "library card", "mess card"],
+    "answer": "Your Student Smart Card functions as an RFID security pass for campus entry gates, Central Library check-out and turnstiles, hostel mess access, automated campus printing stations, and sports complex gymnasium verification."
+  },
+  {
+    "id": 38,
+    "category": "Campus facilities",
+    "question": "What medical and health center facilities are available on campus?",
+    "keywords": ["health center", "medical clinic", "doctor", "ambulance", "pharmacy", "hospital"],
+    "answer": "The University Health Center operates 24/7 with resident medical officers, registered nurses, an emergency room, an on-site subsidized pharmacy, and round-the-clock emergency ambulance service connected to the city apex hospital."
+  },
+  {
+    "id": 39,
+    "category": "Campus facilities",
+    "question": "How do I connect to the university high-speed campus Wi-Fi network?",
+    "keywords": ["wifi", "internet", "campus wifi", "ssid", "connect wifi"],
+    "answer": "Connect your laptop or smartphone to the 'UniSecure-Student' Wi-Fi SSID. When prompted, enter your student roll number as the username and your Student Portal password. For device MAC address registration or connection troubleshooting, visit the IT Helpdesk on Ground Floor, Block-B."
+  },
+  {
+    "id": 40,
+    "category": "Campus facilities",
+    "question": "What sports facilities and gymnasium amenities does the campus offer?",
+    "keywords": ["gym", "sports", "football", "basketball", "swimming pool", "badminton"],
+    "answer": "The Sports Complex includes an Olympic-size swimming pool, synthetic athletic track, indoor badminton courts, basketball and tennis courts, cricket and football fields, and a fully equipped gymnasium with certified fitness trainers. Entry is free for enrolled students upon showing a student ID."
+  },
+  {
+    "id": 41,
+    "category": "Clubs",
+    "question": "What student clubs exist on campus and how can I join one?",
+    "keywords": ["clubs", "student clubs", "robotics", "cultural club", "societies", "extracurricular"],
+    "answer": "The university hosts over 40 active student clubs spanning Technical (AI/ML, Robotics, WebDev, Coding), Cultural (Dance, Music, Theatre, Literary, Fine Arts), and Social Service (Rotaract, NSS, Red Cross). An annual 'Club Fair' is held during Orientation week where students can meet club leads and register."
+  },
+  {
+    "id": 42,
+    "category": "Clubs",
+    "question": "What is the process to establish a new student club or interest group?",
+    "keywords": ["start club", "new club", "found society", "club charter"],
+    "answer": "To start a new club, draft a club charter detailing objectives and proposed annual activities, gather at least 15 founding student members, and secure a full-time faculty advisor. Submit your proposal to the Dean of Student Affairs for formal charter approval."
+  },
+  {
+    "id": 43,
+    "category": "Events",
+    "question": "What are the major annual cultural, technical, and sports festivals?",
+    "keywords": ["fest", "cultural festival", "techfest", "hackathon", "annual event", "sports meet"],
+    "answer": "The university hosts 'InnovateX' (annual flagship national technical festival & 36-hour hackathon in October), 'Aura' (multi-day annual inter-collegiate cultural fest in February), and 'Olympus' (inter-departmental sports meet in January), drawing thousands of participants nationwide."
+  },
+  {
+    "id": 44,
+    "category": "Events",
+    "question": "Can students organize academic seminars or guest lectures?",
+    "keywords": ["seminar", "organize event", "guest lecture", "workshop permission"],
+    "answer": "Yes. Student chapters and department associations can organize workshops and seminars by submitting an event proposal, budget draft, and auditorium booking form to their HOD at least two weeks in advance."
+  },
+  {
+    "id": 45,
+    "category": "Academic calendar",
+    "question": "Where can I find the official Academic Calendar for term dates and holidays?",
+    "keywords": ["academic calendar", "semester dates", "holidays", "term schedule", "vacation"],
+    "answer": "The official Academic Calendar is published on the university homepage under 'Academics' > 'Academic Calendar'. It details semester start and finish dates, mid-term evaluation windows, exam weeks, and official public and festival holidays."
+  },
+  {
+    "id": 46,
+    "category": "Academic calendar",
+    "question": "When does the university winter break and summer vacation take place?",
+    "keywords": ["vacation", "winter break", "summer break", "holidays"],
+    "answer": "Winter break usually spans 2 to 3 weeks between late December and mid-January after the completion of odd semester exams. Summer vacation begins in late May and lasts until mid-July for undergraduate students."
+  },
+  {
+    "id": 47,
+    "category": "General university information",
+    "question": "How can I contact the Dean of Student Affairs or Registrar Office?",
+    "keywords": ["dean", "registrar", "contact office", "student affairs", "administration email"],
+    "answer": "The Registrar's Office is located on the 1st Floor of the Administration Tower (Office hours: 9:00 AM – 5:00 PM, Mon–Fri, email: registrar@university.edu). The Dean of Student Affairs is in Room 104, Student Center (email: dsa@university.edu, phone: +1-800-555-0199)."
+  },
+  {
+    "id": 48,
+    "category": "General university information",
+    "question": "Where is the campus Lost and Found desk located?",
+    "keywords": ["lost and found", "lost item", "misplaced", "security desk"],
+    "answer": "The University Central Lost and Found desk is managed by the Security Control Room at the Main Gate (Building Alpha, Ground Floor). Items found across classrooms, auditoriums, and labs are cataloged there and held for 90 days."
+  },
+  {
+    "id": 49,
+    "category": "General university information",
+    "question": "Does the university provide bus transportation or campus shuttle services?",
+    "keywords": ["transport", "bus service", "campus shuttle", "commute", "routes"],
+    "answer": "Yes, university shuttle buses operate on 15 major suburban and metropolitan routes connecting the city to campus morning and evening. Free electric eco-shuttles also run across campus every 10 minutes between academic blocks, hostels, and sports grounds."
+  },
+  {
+    "id": 50,
+    "category": "General university information",
+    "question": "How do I request an official academic transcript or bonafide student certificate?",
+    "keywords": ["transcript", "bonafide certificate", "official documents", "letter of recommendation"],
+    "answer": "Bonafide certificates can be generated immediately through the ERP portal under 'Student Services' > 'Certificates'. For sealed official academic transcripts for higher studies or visa applications, submit an online transcript request along with the required fee to the Controller of Examinations."
+  },
+  {
+    "id": 51,
+    "category": "General university information",
+    "question": "Who do I contact for mental health counseling and emotional wellness support?",
+    "keywords": ["counseling", "mental health", "wellness", "psychologist", "stress", "support"],
+    "answer": "The University Wellness and Counseling Center provides confidential, free psychological counseling, anxiety management, and wellness coaching. Students can book an in-person or virtual appointment via wellness@university.edu or visit the Student Center 2nd Floor."
+  },
+  {
+    "id": 52,
+    "category": "Fees",
+    "question": "How can I get an education loan letter or fee estimation certificate?",
+    "keywords": ["education loan", "loan letter", "fee structure", "bank loan", "estimate"],
+    "answer": "An official Fee Estimate Certificate for education loan processing can be obtained from the Accounts Section by submitting an application with your student ID, or directly downloaded through the ERP portal under 'Finance' > 'Loan Estimation'."
+  }
+]

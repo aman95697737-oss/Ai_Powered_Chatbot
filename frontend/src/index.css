@@ -1,0 +1,286 @@
+/* UniAssist - Pitch Black & Vibrant Yellow/Gold Modern Design System (Strictly Yellow and Black) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Pure Pitch Black Palette */
+  --bg-primary: #000000;
+  --bg-secondary: #080808;
+  --bg-tertiary: #101010;
+  --bg-card: #141414;
+  --bg-elevated: rgba(18, 18, 18, 0.9);
+  --bg-glass: rgba(10, 10, 10, 0.9);
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(250, 204, 21, 0.35);
+  --border-focus: rgba(250, 204, 21, 0.8);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #d4d4d8;
+  --text-muted: #808080;
+  
+  /* Strictly Yellow & Amber Shades */
+  --color-yellow: #ffd700;
+  --color-yellow-bright: #ffe600;
+  --color-yellow-light: #fef08a;
+  --color-yellow-lemon: #fff275;
+  --color-gold: #facc15;
+  --color-amber: #eab308;
+  --color-dark-amber: #ca8a04;
+  --color-ochre: #a16207;
+
+  /* Aliased to Yellow & Black Theme */
+  --color-pink: #fde047;
+  --color-magenta: #facc15;
+  --color-purple: #ffd700;
+  --color-violet: #facc15;
+  --color-cyan: #fde047;
+  --color-teal: #facc15;
+  --color-emerald: #ffd700;
+  --color-lime: #fde047;
+  --color-orange: #ca8a04;
+  --color-rose: #facc15;
+
+  /* Rich Yellow, Gold & Black Gradients */
+  --gradient-rainbow: linear-gradient(135deg, #ffffff 0%, #fff066 25%, #ffd700 65%, #ca8a04 100%);
+  --gradient-sunset: linear-gradient(135deg, #fff59d 0%, #facc15 45%, #ca8a04 100%);
+  --gradient-neon: linear-gradient(135deg, #ffffff 0%, #fde047 40%, #eab308 100%);
+  --gradient-aurora: linear-gradient(135deg, #fef08a 0%, #facc15 50%, #945f03 100%);
+  --gradient-fire: linear-gradient(135deg, #ffe600 0%, #eab308 70%, #ca8a04 100%);
+  --gradient-candy: linear-gradient(135deg, #fffbeb 0%, #fde047 40%, #eab308 100%);
+  --gradient-yellow-btn: linear-gradient(135deg, #ffe600 0%, #facc15 50%, #eab308 100%);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.7);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.9);
+  --shadow-glow-yellow: 0 0 25px rgba(250, 204, 21, 0.35);
+  --shadow-glow-gold: 0 0 30px rgba(234, 179, 8, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #000000;
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Subtle warm yellow ambient glows on pitch black background */
+body::before {
+  content: '';
+  position: fixed;
+  top: -15%;
+  left: 20%;
+  width: 55vw;
+  height: 45vh;
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.07) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -15%;
+  right: 20%;
+  width: 50vw;
+  height: 45vh;
+  background: radial-gradient(circle, rgba(234, 179, 8, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  background: #000000;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(250, 204, 21, 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd700;
+}
+
+/* Glassmorphism on black */
+.glass-panel {
+  background: rgba(14, 14, 14, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+}
+
+.glass-panel-elevated {
+  background: rgba(18, 18, 18, 0.92);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(250, 204, 21, 0.2);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.95);
+}
+
+/* Yellow and Black Text Gradients */
+.text-gradient {
+  background: var(--gradient-rainbow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gradient-sunset {
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gradient-neon {
+  background: var(--gradient-neon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gradient-aurora {
+  background: var(--gradient-aurora);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gradient-candy {
+  background: var(--gradient-candy);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Yellow text accents */
+.text-yellow { color: #ffd700; }
+.text-gold { color: #facc15; }
+.text-amber { color: #eab308; }
+.text-pink { color: #fde047; }
+.text-purple { color: #ffd700; }
+.text-cyan { color: #fde047; }
+.text-emerald { color: #facc15; }
+.text-orange { color: #eab308; }
+
+/* Yellow and Black Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.925rem;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-primary {
+  background: var(--gradient-yellow-btn);
+  color: #000000;
+  font-weight: 800;
+  box-shadow: 0 4px 20px rgba(250, 204, 21, 0.4);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #ffe600;
+  color: #000000;
+  box-shadow: 0 6px 26px rgba(250, 204, 21, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #facc15;
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(250, 204, 21, 0.12);
+  border-color: #ffd700;
+  color: #ffd700;
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  color: #ffd700;
+  background: rgba(250, 204, 21, 0.08);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typingDots {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.dot-1 { animation: typingDots 1.4s infinite ease-in-out; }
+.dot-2 { animation: typingDots 1.4s infinite ease-in-out 0.2s; }
+.dot-3 { animation: typingDots 1.4s infinite ease-in-out 0.4s; }
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
