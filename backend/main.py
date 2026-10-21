@@ -11,6 +11,14 @@ if str(_root_dir) not in sys.path:
 if str(_current_dir) not in sys.path:
     sys.path.insert(0, str(_current_dir))
 
+# Ensure 'backend' is recognized in sys.modules even if deployed from within backend/
+if "backend" not in sys.modules:
+    import types
+    _pkg = types.ModuleType("backend")
+    _pkg.__path__ = [str(_current_dir)]
+    _pkg.__file__ = str(_current_dir / "__init__.py")
+    sys.modules["backend"] = _pkg
+
 from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 from fastapi import FastAPI
@@ -124,4 +132,5 @@ async def root():
 if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", "8000"))
-    uvicorn.run("backend.main:app", host="0.0.0.0", port=port, reload=True)
+    app_target = "backend.main:app" if Path("backend").exists() else "main:app"
+    uvicorn.run(app_target, host="0.0.0.0", port=port, reload=True)
