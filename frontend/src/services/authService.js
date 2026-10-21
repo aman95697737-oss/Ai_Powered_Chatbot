@@ -2,23 +2,35 @@
 const BASE_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
 
 async function postJson(endpoint, body) {
-  const response = await fetch(`${BASE_URL}${endpoint}`, {
-    method: 'POST',
-    credentials: 'include',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(body),
-  });
+  try {
+    const response = await fetch(`${BASE_URL}${endpoint}`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
 
-  const data = await response.json().catch(() => null);
+    const data = await response.json().catch(() => null);
 
-  if (!response.ok) {
-    const errorMsg = data?.detail || data?.message || `Request failed with status ${response.status}`;
-    throw new Error(errorMsg);
+    if (!response.ok) {
+      let errorMsg = data?.detail || data?.message;
+      if (response.status === 404) {
+        errorMsg = "Backend API server not found (404). Please ensure VITE_API_URL is set in Vercel settings.";
+      } else if (!errorMsg) {
+        errorMsg = `Request failed with status ${response.status}`;
+      }
+      throw new Error(errorMsg);
+    }
+
+    return data;
+  } catch (err) {
+    if (err.message && (err.message.includes('Failed to fetch') || err.message.includes('NetworkError'))) {
+      throw new Error("Unable to reach backend server. Please check your internet connection or backend URL.");
+    }
+    throw err;
   }
-
-  return data;
 }
 
 export async function registerUser({ name, email, password, confirm_password }) {

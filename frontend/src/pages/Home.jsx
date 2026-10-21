@@ -193,8 +193,8 @@ export default function Home({ onStartChat }) {
 
           <div className="pipeline-step">
             <div className="step-number step-purple">2</div>
-            <h4 className="step-title">FastAPI Backend</h4>
-            <p className="step-desc">Chat Service validates input and attempts API query.</p>
+            <h4 className="step-title">Campus Backend</h4>
+            <p className="step-desc">Chat Service validates input and processes inquiry.</p>
           </div>
 
           <div className="pipeline-connector">
@@ -227,22 +227,37 @@ export default function Home({ onStartChat }) {
         <div className="footer-content">
           <div className="footer-brand">
             <div className="footer-logo">
-              <GraduationCap size={22} className="text-pink" />
+              <GraduationCap size={22} className="footer-cap-icon" />
             </div>
-            <div>
-              <span className="footer-title text-gradient-rainbow">UniAssist AI</span>
-              <p className="footer-desc">AI-Powered Chatbot for University Student Support</p>
+            <div className="footer-brand-text">
+              <div className="footer-brand-heading">
+                <span className="footer-title">UniAssist</span>
+                <span className="footer-badge">AI Assistant</span>
+              </div>
+              <p className="footer-desc">Intelligent 24/7 Academic Support for University Students</p>
             </div>
           </div>
           <div className="footer-links">
-            <button className="btn-ghost" onClick={onStartChat}>Chatbot</button>
+            <button 
+              className="footer-nav-btn" 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              Home
+            </button>
             <a href="#features" className="footer-link">Features</a>
-            <a href="#how-it-works" className="footer-link">Architecture</a>
+            <a href="#how-it-works" className="footer-link">How It Works</a>
+            <button className="footer-chat-pill" onClick={onStartChat}>
+              <MessageSquare size={14} />
+              <span>Ask AI</span>
+            </button>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>&copy; {new Date().getFullYear()} UniAssist. Full-Stack Student Support Portal.</span>
-          <span className="text-gradient-sunset font-bold">FastAPI + React.js</span>
+          <span className="footer-copyright">&copy; {new Date().getFullYear()} UniAssist AI. All rights reserved.</span>
+          <div className="footer-status-tag">
+            <span className="footer-pulse-dot"></span>
+            <span>24/7 Campus Live Support</span>
+          </div>
         </div>
       </footer>
 
@@ -635,68 +650,150 @@ export default function Home({ onStartChat }) {
         }
         .footer-section {
           margin-top: 40px;
-          padding-top: 30px;
-          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          padding-top: 36px;
+          border-top: 1px solid rgba(250, 204, 21, 0.2);
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 24px;
         }
         .footer-content {
           display: flex;
           align-items: center;
           justify-content: space-between;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 24px;
         }
         .footer-brand {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 14px;
         }
         .footer-logo {
-          width: 38px;
-          height: 38px;
-          border-radius: var(--radius-sm);
-          background: #ffd700;
+          width: 44px;
+          height: 44px;
+          border-radius: 12px;
+          background: #facc15;
           color: #000000;
-          border: 1px solid #ffd700;
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 2px 10px rgba(250, 204, 21, 0.3);
+          box-shadow: 0 0 16px rgba(250, 204, 21, 0.4);
+          flex-shrink: 0;
+        }
+        .footer-cap-icon {
+          color: #000000;
+        }
+        .footer-brand-text {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+        }
+        .footer-brand-heading {
+          display: flex;
+          align-items: center;
+          gap: 8px;
         }
         .footer-title {
-          font-size: 1.05rem;
+          font-size: 1.15rem;
           font-weight: 800;
+          color: #ffffff;
+          letter-spacing: -0.3px;
+        }
+        .footer-badge {
+          font-size: 0.68rem;
+          font-weight: 800;
+          background: rgba(250, 204, 21, 0.15);
+          color: #facc15;
+          border: 1px solid rgba(250, 204, 21, 0.4);
+          padding: 2px 8px;
+          border-radius: 9999px;
+          letter-spacing: 0.5px;
         }
         .footer-desc {
-          font-size: 0.8rem;
+          font-size: 0.825rem;
           color: #d1d5db;
         }
         .footer-links {
           display: flex;
           align-items: center;
-          gap: 18px;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .footer-nav-btn {
+          background: none;
+          border: none;
+          color: #d1d5db;
+          font-size: 0.88rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: color 0.2s;
+          padding: 0;
+        }
+        .footer-nav-btn:hover {
+          color: #facc15;
         }
         .footer-link {
           color: #d1d5db;
           text-decoration: none;
-          font-size: 0.85rem;
+          font-size: 0.88rem;
+          font-weight: 600;
           transition: color 0.2s;
         }
         .footer-link:hover {
-          color: #ffd700;
+          color: #facc15;
+        }
+        .footer-chat-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: #facc15;
+          color: #000000;
+          border: none;
+          padding: 7px 16px;
+          border-radius: 9999px;
+          font-size: 0.82rem;
+          font-weight: 800;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          box-shadow: 0 2px 10px rgba(250, 204, 21, 0.35);
+        }
+        .footer-chat-pill:hover {
+          background: #ffe600;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 16px rgba(250, 204, 21, 0.5);
         }
         .footer-bottom {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          font-size: 0.8rem;
+          font-size: 0.82rem;
           color: #9ca3af;
           border-top: 1px solid rgba(255, 255, 255, 0.08);
-          padding-top: 16px;
+          padding-top: 18px;
           flex-wrap: wrap;
-          gap: 10px;
+          gap: 12px;
+        }
+        .footer-copyright {
+          color: #d1d5db;
+        }
+        .footer-status-tag {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          font-size: 0.78rem;
+          font-weight: 700;
+          color: #facc15;
+          background: rgba(250, 204, 21, 0.08);
+          border: 1px solid rgba(250, 204, 21, 0.3);
+          padding: 4px 12px;
+          border-radius: 9999px;
+        }
+        .footer-pulse-dot {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #22c55e;
+          box-shadow: 0 0 8px #22c55e;
         }
         @media (max-width: 968px) {
           .home-container {

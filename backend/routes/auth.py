@@ -22,6 +22,7 @@ logger = logging.getLogger("UniAssistAI.AuthRouter")
 router = APIRouter(prefix="/api/auth", tags=["Authentication"])
 
 COOKIE_SECURE = os.getenv("COOKIE_SECURE", "false").lower() in ("true", "1")
+COOKIE_SAMESITE = os.getenv("COOKIE_SAMESITE", "none" if COOKIE_SECURE else "lax")
 COOKIE_MAX_AGE = int(os.getenv("JWT_EXPIRATION_HOURS", "24")) * 3600
 
 @router.post("/register", response_model=AuthResponse, status_code=status.HTTP_200_OK)
@@ -51,7 +52,7 @@ async def verify_register_otp(req: VerifyRegisterOtpRequest, response: Response)
         value=token,
         max_age=COOKIE_MAX_AGE,
         httponly=True,
-        samesite="lax",
+        samesite=COOKIE_SAMESITE,
         secure=COOKIE_SECURE,
         path="/"
     )
@@ -99,7 +100,7 @@ async def verify_login_otp(req: VerifyLoginOtpRequest, response: Response):
         value=token,
         max_age=COOKIE_MAX_AGE,
         httponly=True,
-        samesite="lax",
+        samesite=COOKIE_SAMESITE,
         secure=COOKIE_SECURE,
         path="/"
     )
@@ -127,7 +128,8 @@ async def logout(response: Response):
         key="access_token",
         path="/",
         httponly=True,
-        samesite="lax"
+        samesite=COOKIE_SAMESITE,
+        secure=COOKIE_SECURE
     )
     return {
         "success": True,
