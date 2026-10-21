@@ -243,7 +243,7 @@ export default function VerifyEmail() {
         }
         .auth-subheading {
           font-size: 0.88rem;
-          color: #9ca3af;
+          color: #d1d5db;
           margin: 0 0 20px 0;
           line-height: 1.5;
         }
@@ -264,13 +264,14 @@ export default function VerifyEmail() {
           align-items: center;
           gap: 8px;
           font-size: 0.85rem;
-          color: #e5e7eb;
+          color: #ffffff;
         }
         .dev-otp-code {
           color: #facc15;
           font-size: 1.1rem;
           letter-spacing: 2px;
           font-family: monospace;
+          font-weight: 700;
         }
         .dev-otp-autofill-btn {
           background: #facc15;
@@ -366,12 +367,27 @@ export default function VerifyEmail() {
           align-items: center;
           gap: 6px;
           font-size: 0.84rem;
-          color: #9ca3af;
+          color: #d1d5db;
           text-decoration: none;
           transition: color 0.15s ease;
         }
         .back-link:hover {
           color: #facc15;
+        }
+        @media (max-width: 640px) {
+          .auth-card-container {
+            padding: 24px 18px;
+            border-radius: 16px;
+            width: 100%;
+          }
+          .auth-heading {
+            font-size: 1.35rem;
+          }
+          .dev-otp-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+          }
         }
         @keyframes spin {
           to { transform: rotate(360deg); }

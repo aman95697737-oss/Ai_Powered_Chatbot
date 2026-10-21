@@ -173,21 +173,21 @@ export default function Navbar() {
           font-size: 0.68rem;
           font-weight: 700;
           letter-spacing: 0.8px;
-          color: #9ca3af;
+          color: #d1d5db;
         }
         .nav-links {
           display: flex;
           align-items: center;
           gap: 6px;
-          background: rgba(0, 0, 0, 0.4);
+          background: rgba(0, 0, 0, 0.5);
           padding: 4px 6px;
           border-radius: 9999px;
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(250, 204, 21, 0.2);
         }
         .nav-link {
           background: transparent;
           border: none;
-          color: #9ca3af;
+          color: #d1d5db;
           font-size: 0.86rem;
           font-weight: 600;
           padding: 7px 16px;
@@ -197,7 +197,7 @@ export default function Navbar() {
         }
         .nav-link:hover {
           color: #ffffff;
-          background: rgba(250, 204, 21, 0.1);
+          background: rgba(250, 204, 21, 0.15);
         }
         .nav-link.active {
           color: #000000;
@@ -218,8 +218,8 @@ export default function Navbar() {
           display: inline-flex;
           align-items: center;
           gap: 7px;
-          background: rgba(250, 204, 21, 0.05);
-          border: 1px solid rgba(250, 204, 21, 0.35);
+          background: rgba(250, 204, 21, 0.08);
+          border: 1px solid rgba(250, 204, 21, 0.4);
           color: #ffffff;
           padding: 8px 18px;
           border-radius: 9999px;
@@ -230,9 +230,9 @@ export default function Navbar() {
         }
         .btn-nav-login:hover {
           border-color: #facc15;
-          background: rgba(250, 204, 21, 0.15);
+          background: rgba(250, 204, 21, 0.2);
           color: #facc15;
-          box-shadow: 0 0 14px rgba(250, 204, 21, 0.25);
+          box-shadow: 0 0 14px rgba(250, 204, 21, 0.3);
           transform: translateY(-1px);
         }
         .btn-nav-register {
@@ -263,6 +263,33 @@ export default function Navbar() {
           .navbar-wrapper {
             padding: 8px 16px;
             width: calc(100% - 24px);
+            top: 10px;
+          }
+        }
+        @media (max-width: 520px) {
+          .navbar-wrapper {
+            padding: 7px 12px;
+            width: calc(100% - 16px);
+            top: 8px;
+          }
+          .brand-subtitle {
+            display: none;
+          }
+          .brand-title {
+            font-size: 0.92rem;
+          }
+          .auth-buttons-group {
+            gap: 6px;
+          }
+          .btn-nav-login {
+            padding: 6px 10px;
+            font-size: 0.76rem;
+            gap: 4px;
+          }
+          .btn-nav-register {
+            padding: 6px 12px;
+            font-size: 0.76rem;
+            gap: 4px;
           }
         }
       `}</style>

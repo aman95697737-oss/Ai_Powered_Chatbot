@@ -146,7 +146,7 @@ export default function SearchBar({
           padding: 6px 0;
         }
         .search-textarea::placeholder {
-          color: #6b7280;
+          color: #9ca3af;
         }
         .search-actions {
           display: flex;
@@ -156,7 +156,7 @@ export default function SearchBar({
         .action-icon-btn {
           background: transparent;
           border: none;
-          color: #9ca3af;
+          color: #d1d5db;
           cursor: pointer;
           padding: 6px;
           border-radius: 50%;
@@ -189,8 +189,8 @@ export default function SearchBar({
           justify-content: center;
         }
         .hint-text {
-          font-size: 0.725rem;
-          color: #9ca3af;
+          font-size: 0.76rem;
+          color: #d1d5db;
         }
         .font-semibold {
           font-weight: 600;
@@ -203,6 +203,11 @@ export default function SearchBar({
           font-family: var(--font-mono);
           font-size: 0.675rem;
           color: #ffd700;
+        }
+        @media (max-width: 640px) {
+          .search-textarea {
+            font-size: 16px;
+          }
         }
       `}</style>
     </div>

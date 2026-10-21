@@ -111,16 +111,16 @@ export default function Sidebar({
 
       <style>{`
         .exact-sidebar {
-          width: 240px;
-          min-width: 240px;
+          width: 260px;
+          min-width: 260px;
           height: 100vh;
-          background: #101114;
-          border-right: 1px solid rgba(255, 255, 255, 0.05);
+          background: #0d0e12;
+          border-right: 1px solid rgba(250, 204, 21, 0.15);
           display: flex;
           flex-direction: column;
           padding: 16px 14px 18px;
           position: relative;
-          z-index: 10;
+          z-index: 100;
           user-select: none;
         }
         .sidebar-top-bar {
@@ -137,36 +137,42 @@ export default function Sidebar({
         .icon-btn {
           background: transparent;
           border: none;
-          color: #8b8d99;
+          color: #d1d5db;
           cursor: pointer;
-          padding: 4px;
+          padding: 6px;
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 4px;
+          border-radius: 6px;
           transition: all 0.15s;
         }
         .icon-btn:hover {
-          color: #e2ee2a;
-          background: rgba(255, 255, 255, 0.06);
+          color: #ffd700;
+          background: rgba(250, 204, 21, 0.15);
         }
         .close-btn {
-          color: #555763;
+          color: #facc15;
+          background: rgba(250, 204, 21, 0.1);
+          border: 1px solid rgba(250, 204, 21, 0.3);
+          border-radius: 6px;
+          padding: 6px;
         }
         .close-btn:hover {
-          color: #ffffff;
+          color: #000000;
+          background: #facc15;
         }
         .sidebar-search-capsule {
           display: flex;
           align-items: center;
-          background: #18191e;
-          border: 1px solid rgba(255, 255, 255, 0.04);
+          background: #15161c;
+          border: 1px solid rgba(250, 204, 21, 0.2);
           border-radius: 20px;
-          padding: 6px 14px;
+          padding: 8px 14px;
           margin-bottom: 14px;
         }
         .sidebar-search-capsule:focus-within {
-          border-color: rgba(226, 238, 42, 0.35);
+          border-color: #facc15;
+          box-shadow: 0 0 10px rgba(250, 204, 21, 0.2);
         }
         .search-input-field {
           flex: 1;
@@ -174,14 +180,14 @@ export default function Sidebar({
           border: none;
           outline: none;
           color: #ffffff;
-          font-size: 0.775rem;
+          font-size: 0.825rem;
           font-family: inherit;
         }
         .search-input-field::placeholder {
-          color: #555763;
+          color: #9ca3af;
         }
         .search-glass-icon {
-          color: #555763;
+          color: #facc15;
           flex-shrink: 0;
         }
         .sidebar-content-scroll {
@@ -198,35 +204,37 @@ export default function Sidebar({
           gap: 6px;
         }
         .time-heading {
-          font-size: 0.75rem;
-          font-weight: 700;
-          color: #ffffff;
-          margin-bottom: 4px;
+          font-size: 0.78rem;
+          font-weight: 800;
+          color: #facc15;
+          margin-bottom: 6px;
           padding-left: 2px;
-          letter-spacing: 0.02em;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
         }
         .history-pill {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          background: #18191e;
-          border: 1px solid rgba(255, 255, 255, 0.03);
+          background: #15161c;
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 12px;
-          padding: 8px 10px 8px 12px;
+          padding: 9px 12px;
           cursor: pointer;
           transition: all 0.15s ease;
         }
         .history-pill:hover {
-          background: #20222a;
-          border-color: rgba(226, 238, 42, 0.3);
+          background: #1e1f28;
+          border-color: rgba(250, 204, 21, 0.5);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
         .pill-title {
-          font-size: 0.75rem;
-          color: #a5a7b2;
+          font-size: 0.8rem;
+          color: #e5e7eb;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          max-width: 160px;
+          max-width: 170px;
         }
         .history-pill:hover .pill-title {
           color: #ffffff;
@@ -238,38 +246,38 @@ export default function Sidebar({
         .pill-delete-btn {
           background: transparent;
           border: none;
-          color: #555763;
+          color: #9ca3af;
           cursor: pointer;
-          padding: 3px;
+          padding: 4px;
           display: flex;
           align-items: center;
           border-radius: 4px;
           transition: color 0.15s;
         }
         .pill-delete-btn:hover {
-          color: #f87171;
+          color: #ef4444;
         }
         .empty-history-container {
-          padding: 32px 12px;
+          padding: 36px 14px;
           text-align: center;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 6px;
+          gap: 8px;
         }
         .empty-clock-icon {
-          color: #3b3d4a;
-          margin-bottom: 2px;
+          color: #facc15;
+          margin-bottom: 4px;
         }
         .empty-main-text {
-          font-size: 0.75rem;
-          font-weight: 600;
-          color: #6b6d7c;
+          font-size: 0.85rem;
+          font-weight: 700;
+          color: #ffffff;
         }
         .empty-sub-text {
-          font-size: 0.675rem;
-          color: #4b4c57;
-          line-height: 1.35;
+          font-size: 0.75rem;
+          color: #d1d5db;
+          line-height: 1.4;
         }
 
         @media (max-width: 900px) {
@@ -278,10 +286,12 @@ export default function Sidebar({
             left: 0;
             top: 0;
             bottom: 0;
-            z-index: 999;
+            width: 280px;
+            max-width: 85vw;
+            z-index: 1000;
             transform: translateX(-100%);
-            transition: transform 0.3s ease;
-            box-shadow: 10px 0 30px rgba(0, 0, 0, 0.9);
+            transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 12px 0 40px rgba(0, 0, 0, 0.95), 0 0 20px rgba(250, 204, 21, 0.1);
           }
           .exact-sidebar.open {
             transform: translateX(0);

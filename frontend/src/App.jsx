@@ -164,6 +164,15 @@ function AppContent() {
           color: #ffffff;
           max-width: 420px;
         }
+        @media (max-width: 640px) {
+          .toast-notification {
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            max-width: none;
+            text-align: center;
+          }
+        }
       `}</style>
     </div>
   );

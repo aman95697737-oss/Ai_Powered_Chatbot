@@ -18,8 +18,8 @@
   --border-focus: rgba(250, 204, 21, 0.8);
   
   --text-primary: #ffffff;
-  --text-secondary: #d4d4d8;
-  --text-muted: #808080;
+  --text-secondary: #e5e7eb;
+  --text-muted: #a1a1aa;
   
   /* Strictly Yellow & Amber Shades */
   --color-yellow: #ffd700;
@@ -284,3 +284,27 @@ body::after {
     display: none !important;
   }
 }
+
+/* Responsive & Mobile Form Input Accessibility */
+@media (max-width: 640px) {
+  input, textarea, select {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS */
+  }
+}
+
+/* High Visibility Text Helpers */
+.text-high-contrast {
+  color: #ffffff !important;
+}
+
+.text-subtle-contrast {
+  color: #d1d5db !important;
+}
+
+/* Touch Friendly Targets */
+@media (pointer: coarse) {
+  button, a, input, select {
+    min-height: 40px;
+  }
+}
+

@@ -165,7 +165,7 @@ export default function ForgotPassword() {
         }
         .auth-subheading {
           font-size: 0.85rem;
-          color: #9ca3af;
+          color: #d1d5db;
           margin: 0 0 24px 0;
           line-height: 1.5;
         }
@@ -193,9 +193,9 @@ export default function ForgotPassword() {
           gap: 6px;
         }
         .form-label {
-          font-size: 0.82rem;
+          font-size: 0.85rem;
           font-weight: 700;
-          color: #d1d5db;
+          color: #ffffff;
         }
         .input-with-icon {
           position: relative;
@@ -267,12 +267,26 @@ export default function ForgotPassword() {
           align-items: center;
           gap: 6px;
           font-size: 0.84rem;
-          color: #9ca3af;
+          color: #d1d5db;
           text-decoration: none;
           transition: color 0.15s ease;
         }
         .back-link:hover {
           color: #facc15;
+        }
+        @media (max-width: 640px) {
+          .auth-card-container {
+            padding: 24px 18px;
+            border-radius: 16px;
+            width: 100%;
+          }
+          .auth-heading {
+            font-size: 1.35rem;
+          }
+          .form-input {
+            font-size: 16px;
+            padding: 10px 12px 10px 38px;
+          }
         }
         @keyframes spin {
           to { transform: rotate(360deg); }

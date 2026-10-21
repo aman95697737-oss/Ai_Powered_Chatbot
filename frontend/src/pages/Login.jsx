@@ -290,7 +290,7 @@ export default function Login() {
         }
         .auth-subheading {
           font-size: 0.85rem;
-          color: #9ca3af;
+          color: #d1d5db;
           margin: 0 0 24px 0;
         }
         .auth-error-alert {
@@ -335,9 +335,9 @@ export default function Login() {
           align-items: center;
         }
         .form-label {
-          font-size: 0.82rem;
+          font-size: 0.85rem;
           font-weight: 700;
-          color: #d1d5db;
+          color: #ffffff;
         }
         .forgot-link {
           font-size: 0.78rem;
@@ -414,7 +414,7 @@ export default function Login() {
           margin-top: 24px;
           text-align: center;
           font-size: 0.86rem;
-          color: #9ca3af;
+          color: #d1d5db;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -428,6 +428,23 @@ export default function Login() {
         }
         .auth-link:hover {
           color: #fef08a;
+        }
+        @media (max-width: 640px) {
+          .top-floating-back-btn {
+            display: none;
+          }
+          .auth-card-container {
+            padding: 24px 18px;
+            border-radius: 16px;
+            width: 100%;
+          }
+          .auth-heading {
+            font-size: 1.35rem;
+          }
+          .form-input {
+            font-size: 16px;
+            padding: 10px 12px 10px 38px;
+          }
         }
         @keyframes spin {
           to { transform: rotate(360deg); }

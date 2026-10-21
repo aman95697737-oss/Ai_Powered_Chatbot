@@ -250,8 +250,8 @@ export default function ChatMessage({ message, onSelectPrompt }) {
           border: 1px solid #ffd700;
         }
         .message-time {
-          font-size: 0.7rem;
-          color: var(--text-muted);
+          font-size: 0.72rem;
+          color: #9ca3af;
         }
         .message-bubble {
           padding: 14px 18px;
@@ -306,8 +306,8 @@ export default function ChatMessage({ message, onSelectPrompt }) {
           gap: 5px;
           background: transparent;
           border: none;
-          color: var(--text-muted);
-          font-size: 0.725rem;
+          color: #d1d5db;
+          font-size: 0.75rem;
           cursor: pointer;
           padding: 3px 6px;
           border-radius: 4px;
@@ -330,8 +330,9 @@ export default function ChatMessage({ message, onSelectPrompt }) {
           gap: 6px;
         }
         .suggestion-label {
-          font-size: 0.725rem;
+          font-size: 0.75rem;
           font-weight: 700;
+          color: #d1d5db;
         }
         .suggestion-chips {
           display: flex;

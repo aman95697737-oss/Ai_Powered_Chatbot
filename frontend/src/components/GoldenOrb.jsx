@@ -18,14 +18,14 @@ export default function GoldenOrb() {
           <defs>
             <radialGradient id="plasmaCore" cx="50%" cy="50%" r="50%" fx="35%" fy="35%">
               <stop offset="0%" stopColor="#fff8b5" stopOpacity="0.95" />
-              <stop offset="30%" stopColor="#e2ee2a" stopOpacity="0.9" />
-              <stop offset="70%" stopColor="#8d9411" stopOpacity="0.5" />
+              <stop offset="30%" stopColor="#ffd700" stopOpacity="0.9" />
+              <stop offset="70%" stopColor="#b45309" stopOpacity="0.5" />
               <stop offset="100%" stopColor="#0a0b0d" stopOpacity="0.1" />
             </radialGradient>
 
             <linearGradient id="swirlGold" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#fef08a" stopOpacity="0.9" />
-              <stop offset="50%" stopColor="#e2ee2a" stopOpacity="0.6" />
+              <stop offset="50%" stopColor="#facc15" stopOpacity="0.6" />
               <stop offset="100%" stopColor="#713f12" stopOpacity="0.1" />
             </linearGradient>
 
@@ -35,7 +35,7 @@ export default function GoldenOrb() {
           </defs>
 
           {/* Dark spherical body */}
-          <circle cx="80" cy="80" r="58" fill="#0d0e12" stroke="rgba(226, 238, 42, 0.45)" strokeWidth="1.5" />
+          <circle cx="80" cy="80" r="58" fill="#0d0e12" stroke="rgba(250, 204, 21, 0.55)" strokeWidth="1.5" />
 
           {/* Internal glowing plasma swirls */}
           <circle cx="76" cy="74" r="44" fill="url(#plasmaCore)" filter="url(#orbFilter)" />
@@ -65,7 +65,7 @@ export default function GoldenOrb() {
             rx="36" 
             ry="18" 
             fill="none" 
-            stroke="#e2ee2a" 
+            stroke="#facc15" 
             strokeWidth="2.5" 
             opacity="0.85" 
             transform="rotate(35 76 86)"
@@ -91,7 +91,7 @@ export default function GoldenOrb() {
           width: 170px;
           height: 170px;
           border-radius: 50%;
-          background: radial-gradient(circle, rgba(226, 238, 42, 0.4) 0%, rgba(226, 238, 42, 0.08) 55%, transparent 75%);
+          background: radial-gradient(circle, rgba(250, 204, 21, 0.4) 0%, rgba(250, 204, 21, 0.08) 55%, transparent 75%);
           pointer-events: none;
           z-index: 1;
         }
@@ -103,6 +103,25 @@ export default function GoldenOrb() {
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+        @media (max-width: 640px) {
+          .golden-orb-container {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+          }
+          .orb-ambient-glow {
+            width: 130px;
+            height: 130px;
+          }
+          .orb-sphere-wrapper {
+            width: 90px;
+            height: 90px;
+          }
+          .plasma-layer {
+            width: 90px;
+            height: 90px;
+          }
         }
       `}</style>
     </div>

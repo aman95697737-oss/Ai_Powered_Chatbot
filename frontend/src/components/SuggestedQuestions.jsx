@@ -120,13 +120,22 @@ export default function SuggestedQuestions({ onSelectQuestion }) {
           letter-spacing: 0.05em;
         }
         .suggested-sub {
-          font-size: 0.75rem;
-          color: #9ca3af;
+          font-size: 0.78rem;
+          color: #d1d5db;
         }
         .suggested-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
           gap: 12px;
+        }
+        @media (max-width: 640px) {
+          .suggested-grid {
+            grid-template-columns: 1fr;
+          }
+          .suggested-header {
+            flex-direction: column;
+            gap: 4px;
+          }
         }
         .suggested-card {
           padding: 14px 16px;

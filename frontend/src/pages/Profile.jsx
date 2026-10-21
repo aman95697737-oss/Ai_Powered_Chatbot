@@ -190,8 +190,8 @@ export default function Profile() {
           display: flex;
           align-items: center;
           gap: 6px;
-          font-size: 0.78rem;
-          color: #9ca3af;
+          font-size: 0.8rem;
+          color: #d1d5db;
           font-weight: 600;
         }
         .detail-value {
@@ -263,7 +263,7 @@ export default function Profile() {
           align-items: center;
           gap: 6px;
           font-size: 0.84rem;
-          color: #9ca3af;
+          color: #d1d5db;
           text-decoration: none;
           transition: color 0.15s ease;
         }
@@ -274,6 +274,18 @@ export default function Profile() {
           background: none;
           border: none;
           cursor: pointer;
+        }
+        @media (max-width: 640px) {
+          .auth-card-container {
+            padding: 24px 18px;
+            border-radius: 16px;
+            width: 100%;
+          }
+          .profile-avatar-circle {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+          }
         }
       `}</style>
     </div>

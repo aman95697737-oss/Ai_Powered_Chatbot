@@ -186,7 +186,7 @@ export default function OTPInput({
           justify-content: center;
           gap: 8px;
           font-size: 0.88rem;
-          color: #9ca3af;
+          color: #d1d5db;
         }
         .resend-action-btn {
           background: none;
@@ -203,20 +203,36 @@ export default function OTPInput({
           color: #fef08a;
         }
         .resend-countdown {
-          color: #d1d5db;
+          color: #ffffff;
         }
         .text-yellow {
           color: #facc15;
         }
         @media (max-width: 480px) {
-          .otp-digit-box {
-            width: 42px;
-            height: 52px;
-            font-size: 1.5rem;
-            gap: 8px;
-          }
           .otp-boxes-row {
-            gap: 8px;
+            gap: 6px;
+          }
+          .otp-digit-box {
+            width: clamp(34px, 11vw, 42px);
+            height: 48px;
+            font-size: 1.35rem;
+            border-radius: 8px;
+          }
+        }
+        @media (max-width: 360px) {
+          .otp-boxes-row {
+            gap: 4px;
+          }
+          .otp-digit-box {
+            width: 32px;
+            height: 44px;
+            font-size: 1.2rem;
+            border-radius: 6px;
+          }
+          .otp-resend-row {
+            font-size: 0.78rem;
+            flex-direction: column;
+            gap: 4px;
           }
         }
       `}</style>

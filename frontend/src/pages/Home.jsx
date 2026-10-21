@@ -293,9 +293,9 @@ export default function Home({ onStartChat }) {
           box-shadow: 0 0 8px #ffd700;
         }
         .hero-title {
-          font-size: 3.5rem;
+          font-size: clamp(2.2rem, 4.5vw, 3.5rem);
           font-weight: 900;
-          line-height: 1.12;
+          line-height: 1.15;
           letter-spacing: -0.03em;
           color: #ffffff;
           max-width: 620px;
@@ -303,7 +303,7 @@ export default function Home({ onStartChat }) {
         }
         .hero-subtitle {
           font-size: 1.1rem;
-          color: #9ca3af;
+          color: #e5e7eb;
           max-width: 540px;
           line-height: 1.65;
           margin-bottom: 30px;
@@ -475,8 +475,8 @@ export default function Home({ onStartChat }) {
           line-height: 1.1;
         }
         .stat-label {
-          font-size: 0.825rem;
-          color: #9ca3af;
+          font-size: 0.85rem;
+          color: #d1d5db;
           font-weight: 600;
         }
         .stat-divider {
@@ -597,9 +597,9 @@ export default function Home({ onStartChat }) {
           color: #ffffff;
         }
         .step-desc {
-          font-size: 0.775rem;
-          color: #9ca3af;
-          line-height: 1.4;
+          font-size: 0.8rem;
+          color: #d1d5db;
+          line-height: 1.45;
         }
         .step-decision {
           background: #141419;
@@ -670,8 +670,8 @@ export default function Home({ onStartChat }) {
           font-weight: 800;
         }
         .footer-desc {
-          font-size: 0.775rem;
-          color: #9ca3af;
+          font-size: 0.8rem;
+          color: #d1d5db;
         }
         .footer-links {
           display: flex;
@@ -691,14 +691,18 @@ export default function Home({ onStartChat }) {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          font-size: 0.75rem;
-          color: #6b7280;
-          border-top: 1px solid rgba(255, 255, 255, 0.04);
+          font-size: 0.8rem;
+          color: #9ca3af;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
           padding-top: 16px;
           flex-wrap: wrap;
           gap: 10px;
         }
         @media (max-width: 968px) {
+          .home-container {
+            padding: 20px 20px 60px;
+            gap: 48px;
+          }
           .hero-section {
             grid-template-columns: 1fr;
             text-align: center;
@@ -715,29 +719,69 @@ export default function Home({ onStartChat }) {
           .hero-actions {
             justify-content: center;
           }
-          .hero-title {
-            font-size: 2.8rem;
-          }
-        }
-        @media (max-width: 768px) {
-          .hero-title {
-            font-size: 2.3rem;
-          }
           .stats-section {
-            flex-direction: column;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            padding: 20px;
           }
           .stat-divider {
             display: none;
           }
+        }
+        @media (max-width: 640px) {
+          .home-container {
+            padding: 16px 12px 40px;
+            gap: 36px;
+          }
+          .hero-title {
+            font-size: clamp(1.85rem, 7vw, 2.3rem);
+          }
+          .hero-subtitle {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 24px;
+          }
+          .hero-actions {
+            flex-direction: column;
+            width: 100%;
+            gap: 12px;
+          }
+          .hero-btn-lg {
+            width: 100%;
+            padding: 14px 20px;
+          }
+          .stats-section {
+            grid-template-columns: 1fr;
+            padding: 16px;
+            gap: 16px;
+          }
+          .features-grid {
+            grid-template-columns: 1fr;
+          }
           .pipeline-container {
             flex-direction: column;
             align-items: stretch;
+            padding: 20px 16px;
           }
           .pipeline-connector {
             transform: rotate(90deg);
             justify-content: center;
             margin: 4px 0;
+          }
+          .footer-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 16px;
+          }
+          .footer-brand {
+            flex-direction: column;
+            align-items: center;
+          }
+          .footer-bottom {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
           }
         }
       `}</style>
