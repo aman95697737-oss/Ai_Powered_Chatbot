@@ -1,5 +1,5 @@
 // Authentication API Service for UniAssist AI
-const BASE_URL = import.meta.env.VITE_API_URL || '';
+const BASE_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
 
 async function postJson(endpoint, body) {
   const response = await fetch(`${BASE_URL}${endpoint}`, {
