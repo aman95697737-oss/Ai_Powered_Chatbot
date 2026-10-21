@@ -215,14 +215,14 @@ export default function Register() {
       <style>{`
         .auth-page-wrapper {
           min-height: 100vh;
-          width: 100vw;
+          width: 100%;
           background: #000000;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 24px;
+          padding: 24px 16px;
           position: relative;
-          overflow: hidden;
+          overflow-x: hidden;
           color: #ffffff;
         }
         .auth-ambient-glow {

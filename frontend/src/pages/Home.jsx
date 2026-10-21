@@ -875,10 +875,39 @@ export default function Home({ onStartChat }) {
             flex-direction: column;
             align-items: center;
           }
+          .footer-brand-heading {
+            justify-content: center;
+          }
+          .footer-links {
+            justify-content: center;
+            gap: 14px;
+          }
           .footer-bottom {
             flex-direction: column;
             text-align: center;
             justify-content: center;
+            gap: 10px;
+          }
+          .card-browser-bar {
+            padding: 10px 14px;
+          }
+          .browser-url {
+            padding: 2px 10px;
+            font-size: 0.7rem;
+          }
+          .browser-badge {
+            display: none;
+          }
+          .mock-chat-preview {
+            padding: 16px 14px;
+          }
+          .user-mock {
+            max-width: 90%;
+            font-size: 0.85rem;
+          }
+          .bot-mock {
+            max-width: 98%;
+            font-size: 0.85rem;
           }
         }
       `}</style>

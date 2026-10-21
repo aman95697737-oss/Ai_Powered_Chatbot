@@ -160,12 +160,23 @@ export default function UserProfile({ onOpenProfileModal }) {
           top: calc(100% + 8px);
           right: 0;
           width: 260px;
+          max-width: 90vw;
           background: #0f1015;
           border: 1px solid rgba(250, 204, 21, 0.5);
           border-radius: 14px;
           box-shadow: 0 16px 40px rgba(0, 0, 0, 0.95), 0 0 20px rgba(250, 204, 21, 0.2);
           padding: 14px;
           z-index: 200;
+        }
+        @media (max-width: 480px) {
+          .user-display-name {
+            max-width: 80px;
+            font-size: 0.8rem;
+          }
+          .user-profile-pill {
+            padding: 4px 8px 4px 4px;
+            gap: 6px;
+          }
         }
         .dropdown-user-header {
           display: flex;

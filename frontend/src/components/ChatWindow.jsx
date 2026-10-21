@@ -217,6 +217,39 @@ export default function ChatWindow({
                 </div>
               </div>
             </div>
+
+            {/* Quick Suggestions Chips */}
+            <div className="quick-student-pills-bar">
+              <span className="quick-pills-lead">Popular:</span>
+              <button 
+                type="button"
+                className="quick-pill-btn" 
+                onClick={() => onSendMessage("What is the minimum attendance requirement?")}
+              >
+                📋 Attendance Rules
+              </button>
+              <button 
+                type="button"
+                className="quick-pill-btn" 
+                onClick={() => onSendMessage("How can I apply for a scholarship?")}
+              >
+                💰 Scholarships
+              </button>
+              <button 
+                type="button"
+                className="quick-pill-btn" 
+                onClick={() => onSendMessage("What are the Central Library operating hours?")}
+              >
+                📚 Library Hours
+              </button>
+              <button 
+                type="button"
+                className="quick-pill-btn" 
+                onClick={() => onSendMessage("What are the hostel rules and curfew timings?")}
+              >
+                🏠 Hostel Rules
+              </button>
+            </div>
           </div>
         ) : (
           /* Active Chat Stream */
@@ -439,12 +472,13 @@ export default function ChatWindow({
           flex-direction: column;
           background-color: #08090b;
           background-image: 
-            radial-gradient(circle at 50% 28%, rgba(226, 238, 42, 0.08) 0%, transparent 40%),
-            radial-gradient(circle at 82% 82%, rgba(226, 238, 42, 0.05) 0%, transparent 35%),
+            radial-gradient(circle at 50% 28%, rgba(250, 204, 21, 0.08) 0%, transparent 40%),
+            radial-gradient(circle at 82% 82%, rgba(250, 204, 21, 0.05) 0%, transparent 35%),
             linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
           background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px;
           height: 100vh;
+          height: 100dvh;
           position: relative;
           overflow: hidden;
         }
